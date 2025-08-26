@@ -109,6 +109,23 @@ section {
     margin-top: 2rem;
 }
 
+.videogame-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.videogame-title {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.videogame-title h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 600;
+}
+
 .portfolio-item {
     position: relative;
     overflow: hidden;
