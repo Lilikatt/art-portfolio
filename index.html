@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Art Portfolio</title>
+    <title>Your Name - Game Artist Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +12,9 @@
         <div class="nav-container">
             <div class="logo">Your Name</div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#videogames">Video Games</a></li>
+                <li><a href="#illustration">Illustration</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -26,70 +25,158 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Art</h1>
-            <p>Creating beautiful visual experiences through [your art medium]</p>
-            <a href="#portfolio" class="cta-button">View My Work</a>
+            <h1>Your Name</h1>
+            <p class="hero-subtitle">Game Artist & Illustrator</p>
+            <p>Creating immersive visual experiences for games and beyond</p>
+            <div class="hero-buttons">
+                <a href="#videogames" class="cta-button primary">View Game Art</a>
+                <a href="#illustration" class="cta-button secondary">See Illustrations</a>
+            </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Video Games Section -->
+    <section id="videogames" class="videogames-section">
         <div class="container">
-            <h2>My Portfolio</h2>
+            <h2>Video Game Art</h2>
+            <p class="section-subtitle">Character designs, environments, and concept art for interactive experiences</p>
+            
             <div class="portfolio-grid">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item">
-                    <img src="images/artwork1.jpg" alt="Artwork 1">
+                <!-- Project 1 -->
+                <div class="portfolio-item clickable" onclick="window.location.href='project1.html'">
+                    <img src="images/game1-thumb.jpg" alt="Fantasy RPG Project">
                     <div class="portfolio-overlay">
-                        <h3>Project Title 1</h3>
-                        <p>Brief description of this piece</p>
+                        <h3>Fantasy RPG</h3>
+                        <p>Character & Environment Design</p>
+                        <span class="click-indicator">Click to view project</span>
                     </div>
                 </div>
                 
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item">
-                    <img src="images/artwork2.jpg" alt="Artwork 2">
+                <!-- Project 2 -->
+                <div class="portfolio-item clickable" onclick="window.location.href='project2.html'">
+                    <img src="images/game2-thumb.jpg" alt="Sci-Fi Shooter Project">
                     <div class="portfolio-overlay">
-                        <h3>Project Title 2</h3>
-                        <p>Brief description of this piece</p>
+                        <h3>Sci-Fi Shooter</h3>
+                        <p>Concept Art & UI Design</p>
+                        <span class="click-indicator">Click to view project</span>
                     </div>
                 </div>
                 
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item">
-                    <img src="images/artwork3.jpg" alt="Artwork 3">
+                <!-- Project 3 -->
+                <div class="portfolio-item clickable" onclick="window.location.href='project3.html'">
+                    <img src="images/game3-thumb.jpg" alt="Platformer Adventure Project">
                     <div class="portfolio-overlay">
-                        <h3>Project Title 3</h3>
-                        <p>Brief description of this piece</p>
+                        <h3>Platformer Adventure</h3>
+                        <p>World Design & Assets</p>
+                        <span class="click-indicator">Click to view project</span>
                     </div>
                 </div>
                 
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item">
-                    <img src="images/artwork4.jpg" alt="Artwork 4">
+                <!-- Project 4 -->
+                <div class="portfolio-item clickable" onclick="window.location.href='project4.html'">
+                    <img src="images/game4-thumb.jpg" alt="Mobile Puzzle Game Project">
                     <div class="portfolio-overlay">
-                        <h3>Project Title 4</h3>
-                        <p>Brief description of this piece</p>
+                        <h3>Mobile Puzzle Game</h3>
+                        <p>Character Design & Animation</p>
+                        <span class="click-indicator">Click to view project</span>
                     </div>
                 </div>
                 
-                <!-- Portfolio Item 5 -->
-                <div class="portfolio-item">
-                    <img src="images/artwork5.jpg" alt="Artwork 5">
+                <!-- Project 5 -->
+                <div class="portfolio-item clickable" onclick="window.location.href='project5.html'">
+                    <img src="images/game5-thumb.jpg" alt="Horror Atmosphere Project">
                     <div class="portfolio-overlay">
-                        <h3>Project Title 5</h3>
-                        <p>Brief description of this piece</p>
+                        <h3>Horror Atmosphere</h3>
+                        <p>Environment & Mood Design</p>
+                        <span class="click-indicator">Click to view project</span>
                     </div>
                 </div>
                 
-                <!-- Portfolio Item 6 -->
-                <div class="portfolio-item">
-                    <img src="images/artwork6.jpg" alt="Artwork 6">
+                <!-- Project 6 -->
+                <div class="portfolio-item clickable" onclick="window.location.href='project6.html'">
+                    <img src="images/game6-thumb.jpg" alt="Racing Game Project">
                     <div class="portfolio-overlay">
-                        <h3>Project Title 6</h3>
-                        <p>Brief description of this piece</p>
+                        <h3>Racing Game</h3>
+                        <p>Vehicle & Track Design</p>
+                        <span class="click-indicator">Click to view project</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Illustration Section -->
+    <section id="illustration" class="illustration-section">
+        <div class="container">
+            <h2>Illustration</h2>
+            <p class="section-subtitle">Personal artwork, commissions, and creative explorations</p>
+            
+            <div class="illustration-grid">
+                <!-- Illustration 1 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration1.jpg" alt="Portrait Study">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Portrait Study</h3>
+                        <p>Digital painting exploring light and shadow on the human form.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 2 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration2.jpg" alt="Fantasy Landscape">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Fantasy Landscape</h3>
+                        <p>Concept art piece depicting a mystical forest clearing at dawn.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 3 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration3.jpg" alt="Character Design">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Character Design</h3>
+                        <p>Original character creation for a personal project.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 4 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration4.jpg" alt="Abstract Composition">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Abstract Composition</h3>
+                        <p>Experimental piece playing with color theory and composition.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 5 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration5.jpg" alt="Urban Sketches">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Urban Sketches</h3>
+                        <p>Quick studies of city life and architecture.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 6 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration6.jpg" alt="Creature Design">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Creature Design</h3>
+                        <p>Original creature concepts for a fantasy world.</p>
                     </div>
                 </div>
             </div>
@@ -97,47 +184,38 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>Welcome! I'm [Your Name], a passionate artist specializing in [your medium/style]. My work explores [themes/subjects you focus on].</p>
-                    <p>With [X years] of experience, I've developed a unique style that [describe your artistic approach]. Each piece tells a story and invites viewers to [what you hope viewers experience].</p>
-                    <p>When I'm not creating, you can find me [personal interests/hobbies]. I believe that [your artistic philosophy or what drives your work].</p>
+                    <p>Welcome! I'm [Your Name], a passionate game artist and illustrator with [X years] of experience creating visual stories that captivate and inspire.</p>
+                    
+                    <p>My journey began [background story - maybe how you got started in art/games]. I specialize in [your specialties - character design, environment art, concept art, etc.], with a particular love for [what excites you most about your work].</p>
+                    
+                    <p>I've had the privilege of working on [mention any notable projects, companies, or collaborations]. My work spans from [types of projects] to [other types], always with an eye for [your artistic values - storytelling, atmosphere, detail, etc.].</p>
+                    
+                    <p>When I'm not wielding a digital brush, you can find me [personal interests/hobbies that might relate to your art or just make you human]. I believe that [your artistic philosophy or what drives your creative process].</p>
+                    
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p><strong>Location:</strong> Your City, Country</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+                            <a href="https://artstation.com/yourhandle" target="_blank">ArtStation</a>
+                            <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+                            <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="about-image">
                     <img src="images/profile.jpg" alt="Your Name">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>your.email@example.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Social Media</h3>
-                        <p>@yourhandle</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>Your City, Country</p>
+                    <div class="image-caption">
+                        <p>At work in my studio</p>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -146,6 +224,11 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+                <a href="https://artstation.com/yourhandle" target="_blank">ArtStation</a>
+            </div>
         </div>
     </footer>
 
