@@ -183,7 +183,7 @@ section {
 .illustration-image {
     aspect-ratio: 1;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 .illustration-image img {
@@ -217,10 +217,8 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    align-items: start;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text h2 {
@@ -280,28 +278,7 @@ section {
     background: #2980b9;
 }
 
-.about-image {
-    text-align: center;
-}
 
-.about-image img {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.image-caption {
-    margin-top: 1rem;
-}
-
-.image-caption p {
-    color: #666;
-    font-style: italic;
-    font-size: 0.9rem;
-}
 
 /* Project Pages Styles */
 .project-page {
@@ -462,12 +439,9 @@ footer .container {
     
     /* About section mobile layout */
     .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .about-image {
-        order: -1;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
     }
     
     /* Project page mobile layout */
