@@ -10,6 +10,9 @@ async function loadPortfolioData() {
         // Load illustrations
         loadIllustrations(data.illustrations);
         
+        // Load about section
+        loadAbout(data.about);
+        
     } catch (error) {
         console.error('Error loading portfolio data:', error);
         // Fallback: load default content if JSON fails
@@ -60,6 +63,38 @@ function loadIllustrations(illustrations) {
         `;
         illustrationsGrid.appendChild(illustrationElement);
     });
+}
+
+// Load about section from data
+function loadAbout(aboutData) {
+    const aboutContent = document.getElementById('about-content');
+    if (!aboutContent || !aboutData) return;
+    
+    // Create paragraphs
+    const paragraphsHTML = aboutData.paragraphs.map(paragraph => 
+        `<p>${paragraph}</p>`
+    ).join('');
+    
+    // Create social links
+    const socialLinksHTML = aboutData.contact.social.map(social => 
+        `<a href="${social.url}" target="_blank">${social.name}</a>`
+    ).join('');
+    
+    aboutContent.innerHTML = `
+        <div class="about-text">
+            <h2>${aboutData.title}</h2>
+            ${paragraphsHTML}
+            
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p><strong>Email:</strong> <a href="mailto:${aboutData.contact.email}">${aboutData.contact.email}</a></p>
+                <p><strong>Location:</strong> ${aboutData.contact.location}</p>
+                <div class="social-links">
+                    ${socialLinksHTML}
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 // Fallback content if JSON loading fails
