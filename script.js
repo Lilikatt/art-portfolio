@@ -1,3 +1,76 @@
+// Load portfolio data from JSON file
+async function loadPortfolioData() {
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        
+        // Load video games
+        loadVideogames(data.videogames);
+        
+        // Load illustrations
+        loadIllustrations(data.illustrations);
+        
+    } catch (error) {
+        console.error('Error loading portfolio data:', error);
+        // Fallback: load default content if JSON fails
+        loadDefaultContent();
+    }
+}
+
+// Load video games from data
+function loadVideogames(videogames) {
+    const videogamesGrid = document.getElementById('videogames-grid');
+    if (!videogamesGrid) return;
+    
+    videogamesGrid.innerHTML = '';
+    
+    videogames.forEach(game => {
+        const gameElement = document.createElement('div');
+        gameElement.className = 'videogame-item';
+        gameElement.innerHTML = `
+            <div class="portfolio-item clickable" onclick="window.location.href='${game.projectPage}'">
+                <img src="${game.image}" alt="${game.title}">
+            </div>
+            <div class="videogame-title">
+                <h3>${game.title}</h3>
+            </div>
+        `;
+        videogamesGrid.appendChild(gameElement);
+    });
+}
+
+// Load illustrations from data
+function loadIllustrations(illustrations) {
+    const illustrationsGrid = document.getElementById('illustrations-grid');
+    if (!illustrationsGrid) return;
+    
+    illustrationsGrid.innerHTML = '';
+    
+    illustrations.forEach(illustration => {
+        const illustrationElement = document.createElement('div');
+        illustrationElement.className = 'illustration-item';
+        illustrationElement.innerHTML = `
+            <div class="illustration-image">
+                <img src="${illustration.image}" alt="${illustration.title}">
+            </div>
+            <div class="illustration-info">
+                <h3>${illustration.title}</h3>
+                <p>${illustration.description}</p>
+            </div>
+        `;
+        illustrationsGrid.appendChild(illustrationElement);
+    });
+}
+
+// Fallback content if JSON loading fails
+function loadDefaultContent() {
+    // This would load some basic content if the JSON file isn't found
+    console.log('Loading fallback content...');
+}
+
+// Load data when page loads
+document.addEventListener('DOMContentLoaded', loadPortfolioData);
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
