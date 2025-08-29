@@ -58,7 +58,6 @@ function loadIllustrations(illustrations) {
             </div>
             <div class="illustration-info">
                 <h3>${illustration.title}</h3>
-                <p>${illustration.description}</p>
             </div>
         `;
         illustrationsGrid.appendChild(illustrationElement);
