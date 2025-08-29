@@ -2,39 +2,33 @@
   "videogames": [
     {
       "id": 1,
-      "title": "Fantasy RPG Adventure",
-      "image": "images/game1-thumb.jpg",
+      "title": "Monument Valley 3",
+      "image": "images/game6-thumb.jpg",
       "projectPage": "project1.html"
     },
     {
       "id": 2,
-      "title": "Cyber Wars",
-      "image": "images/game2-thumb.jpg",
+      "title": "Monument Valley 2 - The Lost Forest",
+      "image": "images/game5-thumb.jpg",
       "projectPage": "project2.html"
     },
     {
       "id": 3,
-      "title": "Mystic Lands",
-      "image": "images/game3-thumb.jpg",
+      "title": "Alba: A Wildlife Adventure",
+      "image": "images/game4-thumb.jpg",
       "projectPage": "project3.html"
     },
     {
       "id": 4,
-      "title": "Crystal Quest",
-      "image": "images/game4-thumb.jpg",
+      "title": "Wargroove",
+      "image": "images/game3-thumb.jpg",
       "projectPage": "project4.html"
     },
     {
       "id": 5,
-      "title": "Shadow Manor",
-      "image": "images/game5-thumb.jpg",
+      "title": "Art Academy",
+      "image": "images/game1-thumb.jpg",
       "projectPage": "project5.html"
-    },
-    {
-      "id": 6,
-      "title": "Velocity Rush",
-      "image": "images/game6-thumb.jpg",
-      "projectPage": "project6.html"
     }
   ],
   "illustrations": [
