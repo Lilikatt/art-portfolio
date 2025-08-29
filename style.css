@@ -130,7 +130,6 @@ section {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     aspect-ratio: 1;
 }
@@ -141,7 +140,6 @@ section {
 
 .portfolio-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-item img {
@@ -180,29 +178,18 @@ section {
 .illustration-item {
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
-}
-
-.illustration-item:hover {
-    transform: translateY(-5px);
 }
 
 .illustration-image {
     aspect-ratio: 1;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .illustration-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.illustration-item:hover .illustration-image img {
-    transform: scale(1.05);
 }
 
 .illustration-info {
