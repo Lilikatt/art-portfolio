@@ -37,36 +37,6 @@
       "title": "Portrait Study",
       "description": "Digital painting exploring light and shadow on the human form.",
       "image": "images/illustration1.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Fantasy Landscape",
-      "description": "Concept art piece depicting a mystical forest clearing at dawn.",
-      "image": "images/illustration2.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Character Design",
-      "description": "Original character creation for a personal project.",
-      "image": "images/illustration3.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Abstract Composition",
-      "description": "Experimental piece playing with color theory and composition.",
-      "image": "images/illustration4.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Urban Sketches",
-      "description": "Quick studies of city life and architecture.",
-      "image": "images/illustration5.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Creature Design",
-      "description": "Original creature concepts for a fantasy world.",
-      "image": "images/illustration6.jpg"
     }
   ]
 }
