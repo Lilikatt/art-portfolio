@@ -34,9 +34,21 @@
   "illustrations": [
     {
       "id": 1,
-      "title": "Portrait Study",
-      "description": "Digital painting exploring light and shadow on the human form.",
+      "title": "Card illustration",
+      "description": "-",
       "image": "images/illustration1.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Netrunner",
+      "description": "Card illustration: Algernon",
+      "image": "images/illustration_algernon.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Card illustration",
+      "description": "-",
+      "image": "images/illustration_thedirector.jpg"
     }
   ]
 }
