@@ -2,6 +2,112 @@
   "videogames": [
     {
       "id": 1,
+      "title": "Fantasy RPG Adventure",
+      "image": "images/game1-thumb.jpg",
+      "projectPage": "project1.html"
+    },
+    {
+      "id": 2,
+      "title": "Cyber Wars",
+      "image": "images/game2-thumb.jpg",
+      "projectPage": "project2.html"
+    },
+    {
+      "id": 3,
+      "title": "Mystic Lands",
+      "image": "images/game3-thumb.jpg",
+      "projectPage": "project3.html"
+    },
+    {
+      "id": 4,
+      "title": "Crystal Quest",
+      "image": "images/game4-thumb.jpg",
+      "projectPage": "project4.html"
+    },
+    {
+      "id": 5,
+      "title": "Shadow Manor",
+      "image": "images/game5-thumb.jpg",
+      "projectPage": "project5.html"
+    },
+    {
+      "id": 6,
+      "title": "Velocity Rush",
+      "image": "images/game6-thumb.jpg",
+      "projectPage": "project6.html"
+    }
+  ],
+  "illustrations": [
+    {
+      "id": 1,
+      "title": "Portrait Study",
+      "description": "Digital painting exploring light and shadow on the human form.",
+      "image": "images/illustration1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Fantasy Landscape",
+      "description": "Concept art piece depicting a mystical forest clearing at dawn.",
+      "image": "images/illustration2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Character Design",
+      "description": "Original character creation for a personal project.",
+      "image": "images/illustration3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Abstract Composition",
+      "description": "Experimental piece playing with color theory and composition.",
+      "image": "images/illustration4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Urban Sketches",
+      "description": "Quick studies of city life and architecture.",
+      "image": "images/illustration5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Creature Design",
+      "description": "Original creature concepts for a fantasy world.",
+      "image": "images/illustration6.jpg"
+    }
+  ],
+  "about": {    "title": "Lili Ibrahim",
+    "paragraphs": [
+      "London based games artist, art director and illustrator.",
+      "Lead artist at Ustwo Games.",
+      "Contact me on: lili.ibrahim.art@gmail.com"
+    ],
+    "contact": {
+      "email": "your.email@example.com",
+      "location": "Your City, Country",
+      "social": [
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/yourhandle"
+        },
+        {
+          "name": "ArtStation", 
+          "url": "https://artstation.com/yourhandle"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com/in/yourname"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://instagram.com/yourhandle"
+        }
+      ]
+    }
+  }
+}{
+  "videogames": [
+    {
+      "id": 1,
       "title": "Monument Valley 3",
       "image": "images/game6-thumb.jpg",
       "projectPage": "project1.html"
@@ -35,19 +141,16 @@
     {
       "id": 1,
       "title": "Card illustration",
-      "description": "-",
       "image": "images/illustration1.jpg"
     },
     {
       "id": 1,
-      "title": "Netrunner",
-      "description": "Card illustration: Algernon",
+      "title": "Netrunner: Algernon",
       "image": "images/illustration_algernon.jpg"
     },
     {
       "id": 1,
       "title": "Card illustration",
-      "description": "-",
       "image": "images/illustration_thedirector.jpg"
     }
   ]
