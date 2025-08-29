@@ -1,516 +1,226 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Navigation */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover {
-    color: #3498db;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: #333;
-    margin: 3px 0;
-    transition: 0.3s;
-}
-
-
-
-/* Section Styles */
-section {
-    scroll-margin-top: 80px;
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 3rem;
-}
-
-/* Video Games Section */
-.videogames-section {
-    padding: 120px 0 100px;
-    background: #f8f9fa;
-}
-
-.videogames-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.videogame-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.videogame-title {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.videogame-title h3 {
-    font-size: 1.2rem;
-    color: #2c3e50;
-    margin: 0;
-    font-weight: 600;
-}
-
-.portfolio-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    aspect-ratio: 1;
-}
-
-.portfolio-item.clickable {
-    cursor: pointer;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover img {
-    transform: scale(1.08);
-}
-
-
-
-/* Illustration Section */
-.illustration-section {
-    padding: 100px 0;
-    background: white;
-}
-
-.illustration-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.illustration-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.illustration-item {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.illustration-item:hover {
-    transform: translateY(-5px);
-}
-
-.illustration-image {
-    aspect-ratio: 1;
-    overflow: hidden;
-}
-
-.illustration-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.illustration-item:hover .illustration-image img {
-    transform: scale(1.05);
-}
-
-.illustration-info {
-    padding: 1.5rem;
-}
-
-.illustration-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-}
-
-.illustration-info p {
-    color: #666;
-    line-height: 1.6;
-}
-
-/* About Section */
-.about-section {
-    padding: 100px 0;
-    background: #f8f9fa;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-.about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: #666;
-    line-height: 1.8;
-}
-
-.contact-info {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 2px solid #e0e0e0;
-}
-
-.contact-info h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.contact-info p {
-    margin-bottom: 0.5rem;
-}
-
-.contact-info a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-links a {
-    padding: 0.5rem 1rem;
-    background: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: background 0.3s ease;
-}
-
-.social-links a:hover {
-    background: #2980b9;
-}
-
-.about-image {
-    text-align: center;
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.image-caption {
-    margin-top: 1rem;
-}
-
-.image-caption p {
-    color: #666;
-    font-style: italic;
-    font-size: 0.9rem;
-}
-
-/* Project Pages Styles */
-.project-page {
-    padding: 120px 0 80px;
-    min-height: 100vh;
-}
-
-.back-button {
-    margin-bottom: 2rem;
-}
-
-.back-button a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.back-button a:hover {
-    text-decoration: underline;
-}
-
-.project-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-.project-images .image-item {
-    margin-bottom: 2rem;
-}
-
-.project-images img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.image-caption {
-    margin-top: 0.5rem;
-    color: #666;
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
-.project-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.project-meta {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
-.project-meta p {
-    margin-bottom: 0.5rem;
-    color: #666;
-}
-
-.project-description h3 {
-    color: #2c3e50;
-    margin: 2rem 0 1rem 0;
-    font-size: 1.3rem;
-}
-
-.project-description p,
-.project-description li {
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-}
-
-.project-description ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-/* Footer */
-footer {
-    background: #2c3e50;
-    color: white;
-    padding: 3rem 0;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
-
-.footer-links a:hover {
-    opacity: 0.7;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .illustration-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* About section mobile layout */
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .about-image {
-        order: -1;
-    }
-    
-    /* Project page mobile layout */
-    .project-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-info {
-        order: -1;
-    }
-    
-    footer .container {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .section-subtitle {
-        font-size: 1rem;
-    }
-    
-    .illustration-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Game Artist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Lili Ibrahim</div>
+            <ul class="nav-menu">
+                <li><a href="#videogames">Video Games</a></li>
+                <li><a href="#illustration">Illustration</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Video Games Section -->
+    <section id="videogames" class="videogames-section">
+        <div class="container">
+            <h2>Video Game Art</h2>
+            <p class="section-subtitle">Character designs, environments, and concept art for interactive experiences</p>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="videogame-item">
+                    <div class="portfolio-item clickable" onclick="window.location.href='project1.html'">
+                        <img src="images/game1-thumb.jpg" alt="Fantasy RPG Project">
+                    </div>
+                    <div class="videogame-title">
+                        <h3>Fantasy RPG Adventure</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="videogame-item">
+                    <div class="portfolio-item clickable" onclick="window.location.href='project2.html'">
+                        <img src="images/game2-thumb.jpg" alt="Sci-Fi Shooter Project">
+                    </div>
+                    <div class="videogame-title">
+                        <h3>Cyber Wars</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="videogame-item">
+                    <div class="portfolio-item clickable" onclick="window.location.href='project3.html'">
+                        <img src="images/game3-thumb.jpg" alt="Platformer Adventure Project">
+                    </div>
+                    <div class="videogame-title">
+                        <h3>Mystic Lands</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="videogame-item">
+                    <div class="portfolio-item clickable" onclick="window.location.href='project4.html'">
+                        <img src="images/game4-thumb.jpg" alt="Mobile Puzzle Game Project">
+                    </div>
+                    <div class="videogame-title">
+                        <h3>Crystal Quest</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="videogame-item">
+                    <div class="portfolio-item clickable" onclick="window.location.href='project5.html'">
+                        <img src="images/game5-thumb.jpg" alt="Horror Atmosphere Project">
+                    </div>
+                    <div class="videogame-title">
+                        <h3>Shadow Manor</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="videogame-item">
+                    <div class="portfolio-item clickable" onclick="window.location.href='project6.html'">
+                        <img src="images/game6-thumb.jpg" alt="Racing Game Project">
+                    </div>
+                    <div class="videogame-title">
+                        <h3>Velocity Rush</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Illustration Section -->
+    <section id="illustration" class="illustration-section">
+        <div class="container">
+            <h2>Illustration</h2>
+            <p class="section-subtitle">Personal artwork, commissions, and creative explorations</p>
+            
+            <div class="illustration-grid">
+                <!-- Illustration 1 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration1.jpg" alt="Portrait Study">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Portrait Study</h3>
+                        <p>Digital painting exploring light and shadow on the human form.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 2 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration2.jpg" alt="Fantasy Landscape">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Fantasy Landscape</h3>
+                        <p>Concept art piece depicting a mystical forest clearing at dawn.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 3 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration3.jpg" alt="Character Design">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Character Design</h3>
+                        <p>Original character creation for a personal project.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 4 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration4.jpg" alt="Abstract Composition">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Abstract Composition</h3>
+                        <p>Experimental piece playing with color theory and composition.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 5 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration5.jpg" alt="Urban Sketches">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Urban Sketches</h3>
+                        <p>Quick studies of city life and architecture.</p>
+                    </div>
+                </div>
+                
+                <!-- Illustration 6 -->
+                <div class="illustration-item">
+                    <div class="illustration-image">
+                        <img src="images/illustration6.jpg" alt="Creature Design">
+                    </div>
+                    <div class="illustration-info">
+                        <h3>Creature Design</h3>
+                        <p>Original creature concepts for a fantasy world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Welcome! I'm [Lili Ibrahim], a passionate game artist and illustrator with [X years] of experience creating visual stories that captivate and inspire.</p>
+                    
+                    <p>My journey began [background story - maybe how you got started in art/games]. I specialize in [your specialties - character design, environment art, concept art, etc.], with a particular love for [what excites you most about your work].</p>
+                    
+                    <p>I've had the privilege of working on [mention any notable projects, companies, or collaborations]. My work spans from [types of projects] to [other types], always with an eye for [your artistic values - storytelling, atmosphere, detail, etc.].</p>
+                    
+                    <p>When I'm not wielding a digital brush, you can find me [personal interests/hobbies that might relate to your art or just make you human]. I believe that [your artistic philosophy or what drives your creative process].</p>
+                    
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                        <p><strong>Location:</strong> Your City, Country</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+                            <a href="https://artstation.com/yourhandle" target="_blank">ArtStation</a>
+                            <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+                            <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Lili Ibrahim">
+                    <div class="image-caption">
+                        <p>At work in my studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lili Ibrahim. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+                <a href="https://artstation.com/yourhandle" target="_blank">ArtStation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
