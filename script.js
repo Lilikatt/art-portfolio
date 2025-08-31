@@ -2,19 +2,38 @@
 async function loadPortfolioData() {
     try {
         const response = await fetch('data.json');
-        const data = await response.json();
+        
+        // Check if the response is ok
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        // Get the text first to see what we're actually getting
+        const text = await response.text();
+        console.log('Raw JSON response:', text);
+        
+        // Then parse it
+        const data = JSON.parse(text);
+        console.log('Parsed data:', data);
         
         // Load video games
-        loadVideogames(data.videogames);
+        if (data.videogames) {
+            loadVideogames(data.videogames);
+        }
         
         // Load illustrations
-        loadIllustrations(data.illustrations);
+        if (data.illustrations) {
+            loadIllustrations(data.illustrations);
+        }
         
         // Load about section
-        loadAbout(data.about);
+        if (data.about) {
+            loadAbout(data.about);
+        }
         
     } catch (error) {
         console.error('Error loading portfolio data:', error);
+        console.error('Error details:', error.message);
         // Fallback: load default content if JSON fails
         loadDefaultContent();
     }
@@ -23,7 +42,10 @@ async function loadPortfolioData() {
 // Load video games from data
 function loadVideogames(videogames) {
     const videogamesGrid = document.getElementById('videogames-grid');
-    if (!videogamesGrid) return;
+    if (!videogamesGrid) {
+        console.log('videogames-grid element not found');
+        return;
+    }
     
     videogamesGrid.innerHTML = '';
     
@@ -40,12 +62,17 @@ function loadVideogames(videogames) {
         `;
         videogamesGrid.appendChild(gameElement);
     });
+    
+    console.log(`Loaded ${videogames.length} video games`);
 }
 
 // Load illustrations from data
 function loadIllustrations(illustrations) {
     const illustrationsGrid = document.getElementById('illustrations-grid');
-    if (!illustrationsGrid) return;
+    if (!illustrationsGrid) {
+        console.log('illustrations-grid element not found');
+        return;
+    }
     
     illustrationsGrid.innerHTML = '';
     
@@ -62,12 +89,22 @@ function loadIllustrations(illustrations) {
         `;
         illustrationsGrid.appendChild(illustrationElement);
     });
+    
+    console.log(`Loaded ${illustrations.length} illustrations`);
 }
 
 // Load about section from data
 function loadAbout(aboutData) {
     const aboutContent = document.getElementById('about-content');
-    if (!aboutContent || !aboutData) return;
+    if (!aboutContent) {
+        console.log('about-content element not found');
+        return;
+    }
+    
+    if (!aboutData) {
+        console.log('No about data provided');
+        return;
+    }
     
     // Create paragraphs
     const paragraphsHTML = aboutData.paragraphs.map(paragraph => 
@@ -94,31 +131,58 @@ function loadAbout(aboutData) {
             </div>
         </div>
     `;
+    
+    console.log('Loaded about section');
 }
 
 // Fallback content if JSON loading fails
 function loadDefaultContent() {
-    // This would load some basic content if the JSON file isn't found
     console.log('Loading fallback content...');
+    
+    // Load some basic fallback content
+    const videogamesGrid = document.getElementById('videogames-grid');
+    if (videogamesGrid) {
+        videogamesGrid.innerHTML = '<p>Error loading video games. Please check your data.json file.</p>';
+    }
+    
+    const illustrationsGrid = document.getElementById('illustrations-grid');
+    if (illustrationsGrid) {
+        illustrationsGrid.innerHTML = '<p>Error loading illustrations. Please check your data.json file.</p>';
+    }
+    
+    const aboutContent = document.getElementById('about-content');
+    if (aboutContent) {
+        aboutContent.innerHTML = `
+            <div class="about-text">
+                <h2>About</h2>
+                <p>Error loading about section. Please check your data.json file.</p>
+            </div>
+        `;
+    }
 }
 
 // Load data when page loads
-document.addEventListener('DOMContentLoaded', loadPortfolioData);
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, starting to load portfolio data...');
+    loadPortfolioData();
+});
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+if (hamburger && navMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-menu a').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}));
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-menu a').forEach(n => n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }));
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -141,39 +205,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
-    if (window.scrollY > 100) {
-        nav.style.background = 'rgba(255, 255, 255, 0.98)';
-        nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    } else {
-        nav.style.background = 'rgba(255, 255, 255, 0.95)';
-        nav.style.boxShadow = 'none';
+    if (nav) {
+        if (window.scrollY > 100) {
+            nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        } else {
+            nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            nav.style.boxShadow = 'none';
+        }
     }
 });
-
-// Contact form handling (basic)
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
-        
-        // Basic validation
-        if (!name || !email || !message) {
-            alert('Please fill in all fields.');
-            return;
-        }
-        
-        // For now, just show success message
-        // In production, you'd send this to a server or email service
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        this.reset();
-    });
-}
 
 // Animate portfolio items on scroll
 const observerOptions = {
