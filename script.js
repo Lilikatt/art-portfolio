@@ -111,24 +111,10 @@ function loadAbout(aboutData) {
         `<p>${paragraph}</p>`
     ).join('');
     
-    // Create social links
-    const socialLinksHTML = aboutData.contact.social.map(social => 
-        `<a href="${social.url}" target="_blank">${social.name}</a>`
-    ).join('');
-    
     aboutContent.innerHTML = `
         <div class="about-text">
             <h2>${aboutData.title}</h2>
             ${paragraphsHTML}
-            
-            <div class="contact-info">
-                <h3>Let's Connect</h3>
-                <p><strong>Email:</strong> <a href="mailto:${aboutData.contact.email}">${aboutData.contact.email}</a></p>
-                <p><strong>Location:</strong> ${aboutData.contact.location}</p>
-                <div class="social-links">
-                    ${socialLinksHTML}
-                </div>
-            </div>
         </div>
     `;
     
