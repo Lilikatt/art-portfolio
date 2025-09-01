@@ -39,9 +39,9 @@ nav {
 }
 
 .logo {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #2c3e50;
 }
 
@@ -229,6 +229,10 @@ section {
     text-align: center;
 }
 
+.about-text {
+    text-align: center;
+}
+
 .about-text h2 {
     font-family: 'Outfit', sans-serif;
     font-size: 2.5rem;
@@ -238,7 +242,9 @@ section {
 }
 
 .about-text p {
+    font-family: 'Outfit', sans-serif;
     font-size: 1.1rem;
+    font-weight: 400;
     margin-bottom: 1.5rem;
     color: #666;
     line-height: 1.8;
