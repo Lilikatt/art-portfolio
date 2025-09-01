@@ -2,31 +2,31 @@
   "videogames": [
     {
       "id": 1,
-      "title": "Monument Valley 3",
+      "title": "MONUMENT VALLEY 3",
       "image": "images/game6-thumb.jpg",
       "projectPage": "project1.html"
     },
     {
       "id": 2,
-      "title": "Monument Valley 2 - The Lost Forest",
+      "title": "MONUMENT VALLEY 2 - THE LOST FOREST",
       "image": "images/game5-thumb.jpg",
       "projectPage": "project2.html"
     },
     {
       "id": 3,
-      "title": "Alba: A Wildlife Adventure",
+      "title": "ALBA: A WILDLIFE ADVENTURE",
       "image": "images/game4-thumb.jpg",
       "projectPage": "project3.html"
     },
     {
       "id": 4,
-      "title": "Wargroove",
+      "title": "WARGROOVE",
       "image": "images/game3-thumb.jpg",
       "projectPage": "project4.html"
     },
     {
       "id": 5,
-      "title": "Art Academy",
+      "title": "ART ACADEMY",
       "image": "images/game1-thumb.jpg",
       "projectPage": "project5.html"
     }
@@ -39,7 +39,7 @@
     },
     {
       "id": 2,
-      "title": "Netrunner: Algernon",
+      "title": "NETRUNNER: ALGERNON",
       "image": "images/illustration_algernon.jpg"
     },
     {
