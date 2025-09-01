@@ -123,10 +123,11 @@ section {
 }
 
 .videogame-title h3 {
+    font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     color: #2c3e50;
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .portfolio-item {
@@ -203,10 +204,11 @@ section {
 }
 
 .illustration-info h3 {
+    font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #2c3e50;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .illustration-info p {
