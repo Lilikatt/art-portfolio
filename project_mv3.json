@@ -8,15 +8,15 @@
   "images": [
     {
       "src": "images/mv3-image1.jpg",
-      "alt": "Monument Valley 3 Level Design"
+      "alt": "Monument Valley 3 screenshot"
     },
     {
       "src": "images/mv3-image2.jpg", 
-      "alt": "Monument Valley 3 Character Design"
+      "alt": "Monument Valley 3 screenshot"
     },
     {
       "src": "images/mv3-image3.jpg",
-      "alt": "Monument Valley 3 Environment"
+      "alt": "Monument Valley 3 screenshot"
     }
   ]
 }
