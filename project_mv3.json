@@ -1,0 +1,24 @@
+{
+  "title": "Monument Valley 3",
+  "description": [
+    "Monument Valley 3 continues the beloved series of impossible architecture and optical illusions. As lead artist, I was responsible for creating the distinctive visual style that builds upon the series' legacy while introducing fresh elements.",
+    "The challenge was to maintain the series' iconic minimalist aesthetic while introducing new gameplay mechanics. I focused on creating serene, meditative environments that guide the player through impossible geometric puzzles."
+  ],
+  "images": [
+    {
+      "src": "images/mv3-image1.jpg",
+      "alt": "Monument Valley 3 Level Design",
+      "caption": "Early concept art for the floating gardens level"
+    },
+    {
+      "src": "images/mv3-image2.jpg", 
+      "alt": "Monument Valley 3 Character Design",
+      "caption": "Character movement studies and animations"
+    },
+    {
+      "src": "images/mv3-image3.jpg",
+      "alt": "Monument Valley 3 Environment", 
+      "caption": "Environmental mood studies with lighting variations"
+    }
+  ]
+}
