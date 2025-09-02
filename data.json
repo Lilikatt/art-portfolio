@@ -36,16 +36,43 @@
       "id": 1,
       "title": "Card illustration",
       "image": "images/illustration1.jpg"
+      "aspectRatio": "1:1"
     },
     {
       "id": 2,
       "title": "NETRUNNER: ALGERNON",
       "image": "images/illustration_algernon.jpg"
+      "aspectRatio": "1:1"
     },
     {
       "id": 3,
       "title": "Card illustration",
       "image": "images/illustration_thedirector.jpg"
+      "aspectRatio": "1:1"
+    },
+    {
+      "id": 3,
+      "title": "Book cover illustration",
+      "image": "images/illustration_starlesssky.jpg"
+      "aspectRatio": "2:1"
+    },
+    {
+      "id": 3,
+      "title": "Book cover illustration",
+      "image": "images/illustration_stayawhile.jpg"
+      "aspectRatio": "2:1"
+    },
+    {
+      "id": 3,
+      "title": "Board game illustration",
+      "image": "images/illustration_relativity.jpg"
+      "aspectRatio": "1:1"
+    },
+    {
+      "id": 3,
+      "title": "card illustration",
+      "image": "images/illustration_enpassant.jpg"
+      "aspectRatio": "1:1"
     }
   ],
   "about": {
