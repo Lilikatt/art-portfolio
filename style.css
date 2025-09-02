@@ -441,9 +441,20 @@ footer {
         font-size: 1rem;
     }
     
-    .illustration-grid {
-        grid-template-columns: 1fr;
-    }
+.illustration-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.illustration-item[data-aspect="2:1"] {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.illustration-item[data-aspect="1:2"] {
+    grid-column: span 1;
+    grid-row: span 2;
+}
 }
 
 /* Smooth scrolling */
