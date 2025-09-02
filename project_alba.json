@@ -1,0 +1,22 @@
+{
+  "title": "Alba: A Wildlife Adventure",
+  "description": [
+    "Alba: A Wildlife Adventure is a game about a young girl who discovers her love for nature, and makes it her mission to save the local nature reserve from demolishion.",
+    "The game was widely recognised for its messaging about nature preservation, alongside its launch campaign of '1 download = 1 tree'. Through our partnership with Ecology we planted over 1 million mangrove trees in Madagascar.",
+    "I was the art lead of a team of 8 artists, creating a rich environment with more than 60 animals for the player to discover. I also worked on the subsequent updates."
+  ],
+  "images": [
+    {
+      "src": "images/mv3-image1.jpg",
+      "alt": "Monument Valley 3 screenshot"
+    },
+    {
+      "src": "images/mv3-image2.jpg", 
+      "alt": "Monument Valley 3 screenshot"
+    },
+    {
+      "src": "images/mv3-image3.jpg",
+      "alt": "Monument Valley 3 screenshot"
+    }
+  ]
+}
