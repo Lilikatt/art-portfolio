@@ -79,13 +79,9 @@ function loadIllustrations(illustrations) {
     illustrations.forEach(illustration => {
         const illustrationElement = document.createElement('div');
         illustrationElement.className = 'illustration-item';
+        illustrationElement.setAttribute('data-aspect', illustration.aspectRatio);
         illustrationElement.innerHTML = `
-            <div class="illustration-image">
-                <img src="${illustration.image}" alt="${illustration.title}">
-            </div>
-            <div class="illustration-info">
-                <h3>${illustration.title}</h3>
-            </div>
+            <img src="${illustration.image}" alt="${illustration.title}">
         `;
         illustrationsGrid.appendChild(illustrationElement);
     });
