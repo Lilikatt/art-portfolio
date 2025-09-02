@@ -1,0 +1,22 @@
+{
+  "title": "Monument Valley 2 - The Lost Forest",
+  "description": [
+    "The Lost Forest was created as part of Playing for the Planets annual Green Game Jam and was released as a free expansion to Monument Valley 2.",
+    "This expansion sets out to promote forest conservation through its messaging and content.",
+    "For this 'love letter' to forest, my role as a lead artist was to establish a visual direction that captured our feelings of wonder for forests."
+  ],
+  "images": [
+    {
+      "src": "images/mv3-image1.jpg",
+      "alt": "Monument Valley 3 screenshot"
+    },
+    {
+      "src": "images/mv3-image2.jpg", 
+      "alt": "Monument Valley 3 screenshot"
+    },
+    {
+      "src": "images/mv3-image3.jpg",
+      "alt": "Monument Valley 3 screenshot"
+    }
+  ]
+}
