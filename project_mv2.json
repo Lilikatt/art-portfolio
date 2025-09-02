@@ -7,16 +7,16 @@
   ],
   "images": [
     {
-      "src": "images/mv3-image1.jpg",
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/mv2-image1.jpg",
+      "alt": "Monument Valley 2 screenshot"
     },
     {
-      "src": "images/mv3-image2.jpg", 
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/mv2-image2.jpg", 
+      "alt": "Monument Valley 2 screenshot"
     },
     {
-      "src": "images/mv3-image3.jpg",
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/mv2-image3.jpg",
+      "alt": "Monument Valley 2 screenshot"
     }
   ]
 }
