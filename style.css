@@ -468,10 +468,6 @@ footer {
         gap: 1rem;
         text-align: center;
     }
-    
-    .social-links {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 480px) {
