@@ -1,3 +1,9 @@
+/* Import Google Fonts directly in CSS */
+@import url('https://fonts.googleapis.com/css?family=Outfit:400,500,600,700|Poiret+One:400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+
 /* Project Page Styles */
 .simple-project-page {
     padding: 120px 0 80px;
