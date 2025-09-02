@@ -190,45 +190,39 @@ section {
 
 .illustration-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     margin-top: 2rem;
+    grid-auto-flow: row dense;
 }
 
 .illustration-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.illustration-image {
-    aspect-ratio: 1;
     overflow: hidden;
-    border-radius: 0;
 }
 
-.illustration-image img {
+.illustration-item[data-aspect="1:1"] {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 1;
+}
+
+.illustration-item[data-aspect="2:1"] {
+    grid-column: span 2;
+    grid-row: span 1;
+    aspect-ratio: 2;
+}
+
+.illustration-item[data-aspect="1:2"] {
+    grid-column: span 1;
+    grid-row: span 2;
+    aspect-ratio: 0.5;
+}
+
+.illustration-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.illustration-info {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.illustration-info h3 {
-    font-family: 'Manjari', sans-serif !important;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-    font-weight: 400;
-}
-
-.illustration-info p {
-    color: #666;
-    line-height: 1.6;
-    font-size: 0.95rem;
+    display: block;
 }
 
 /* About Section */
