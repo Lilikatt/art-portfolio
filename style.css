@@ -487,4 +487,14 @@ footer {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+
+    .logo a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+    opacity: 0.7;
+}
 }
