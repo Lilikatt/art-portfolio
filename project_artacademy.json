@@ -8,16 +8,16 @@
   ],
   "images": [
     {
-      "src": "images/mv3-image1.jpg",
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/aa-image1.jpg",
+      "alt": "Art Academy screenshot"
     },
     {
-      "src": "images/mv3-image2.jpg", 
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/aa-image2.jpg", 
+      "alt": "Art Academy screenshot"
     },
     {
-      "src": "images/mv3-image3.jpg",
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/aa-image3.jpg",
+      "alt": "Art Academy screenshot"
     }
   ]
 }
