@@ -1,0 +1,21 @@
+{
+  "title": "Wargroove",
+  "description": [
+    "A turn based strategy game in the vein of Advance Wars. You follow the protagonist Mercia as she explores the continent Aurania and unravels its history.",
+    "I was the art director working with a team of amazing pixel artists to bring the vision of Wargroove to life. I also worked on the update 'Wargroove: Double Trouble'."
+  ],
+  "images": [
+    {
+      "src": "images/mv3-image1.jpg",
+      "alt": "Monument Valley 3 screenshot"
+    },
+    {
+      "src": "images/mv3-image2.jpg", 
+      "alt": "Monument Valley 3 screenshot"
+    },
+    {
+      "src": "images/mv3-image3.jpg",
+      "alt": "Monument Valley 3 screenshot"
+    }
+  ]
+}
