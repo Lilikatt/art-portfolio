@@ -10,25 +10,25 @@
       "id": 2,
       "title": "MONUMENT VALLEY 2 - THE LOST FOREST",
       "image": "images/game5-thumb.jpg",
-      "projectPage": "project2.html"
+      "projectPage": "project_mv2.html"
     },
     {
       "id": 3,
       "title": "ALBA: A WILDLIFE ADVENTURE",
       "image": "images/game4-thumb.jpg",
-      "projectPage": "project3.html"
+      "projectPage": "project_alba.html"
     },
     {
       "id": 4,
       "title": "WARGROOVE",
       "image": "images/game3-thumb.jpg",
-      "projectPage": "project4.html"
+      "projectPage": "project_wargoove.html"
     },
     {
       "id": 5,
       "title": "ART ACADEMY",
       "image": "images/game1-thumb.jpg",
-      "projectPage": "project5.html"
+      "projectPage": "project_artacademy.html"
     }
   ],
   "illustrations": [
