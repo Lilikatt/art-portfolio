@@ -7,16 +7,16 @@
   ],
   "images": [
     {
-      "src": "images/mv3-image1.jpg",
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/alba-image1.jpg",
+      "alt": "Alba: A Wildlife Adventure screenshot"
     },
     {
-      "src": "images/mv3-image2.jpg", 
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/alba-image2.jpg", 
+      "alt": "Alba: A Wildlife Adventure screenshot"
     },
     {
-      "src": "images/mv3-image3.jpg",
-      "alt": "Monument Valley 3 screenshot"
+      "src": "images/alba-image3.jpg",
+      "alt": "Alba: A Wildlife Adventure screenshot"
     }
   ]
 }
